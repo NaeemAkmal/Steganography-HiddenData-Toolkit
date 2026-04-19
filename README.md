@@ -123,6 +123,7 @@ stegseek flower.jpg --passphrase 123456
 ```
 
 ![StegSeek Extract](screenshots/task5_stegseek_extract.png)
+
 *StegSeek finding passphrase "123456" and extracting the original secret.txt*
 
 **Alternative Tools:**
