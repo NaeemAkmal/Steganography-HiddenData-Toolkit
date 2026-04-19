@@ -124,7 +124,6 @@ stegseek flower.jpg --passphrase 123456
 **Alternative Tools:**
 - [OutGuess](https://github.com/resurrecting-open-source-projects/outguess) — Redundant JPEG steganography
 - [F5](https://github.com/jackfengji/f5-steganography) — Matrix encoding for high-capacity JPEG stego
-- [JPHS](http://linux01.gwdg.de/~alatham/stego.html) — JPEG Hide & Seek for Windows
 
 ---
 
@@ -145,7 +144,6 @@ WinRAR can create a **Self-Extracting (SFX) archive** and append it to the tail 
 
 **Alternative Tools:**
 - [7-Zip SFX](https://www.7-zip.org/) — Open-source SFX archive creation
-- [Iexpress](https://docs.microsoft.com/en-us/windows/win32/tools/iexpress) — Windows built-in self-extractor
 - [NSIS](https://nsis.sourceforge.io/) — Advanced installer/extractor framework
 
 ---
@@ -173,7 +171,6 @@ pause
 > ⚠️ **Note:** This technique is used in real-world malware delivery. Understanding it is essential for defensive security and incident response.
 
 **Alternative Tools:**
-- [AutoIt](https://www.autoitscript.com/) — Scripting tool to bundle and auto-execute payloads
 - [NSIS](https://nsis.sourceforge.io/) — Supports silent extraction and execution
 - [7-Zip SFX](https://www.7-zip.org/) — Supports custom SFX modules with run commands
 
@@ -318,10 +315,10 @@ cat extracted_secret.txt
 *Zsteg scanning b1–b4 bit planes across rgb/bgr channels (lsb/msb) for LSB-encoded data*
 
 **Key findings on `encoded_image.png`:**
-- ✅ Binwalk flagged Zlib compressed data at `0x29`
-- ✅ Pngcheck validated structure — 4 chunks, 81.2% compression
-- ✅ OpenStego flagged password requirement — confirming hidden data present
-- ✅ Zsteg scanned all bit planes — LSB artifacts detected
+-  Binwalk flagged Zlib compressed data at `0x29`
+-  Pngcheck validated structure — 4 chunks, 81.2% compression
+-  OpenStego flagged password requirement — confirming hidden data present
+-  Zsteg scanned all bit planes — LSB artifacts detected
 
 ![Aperisolve Steghide](screenshots/task5_aperisolve_exiftool.png)
 
@@ -357,7 +354,7 @@ cat extracted_secret.txt
 | **Stegdetect** | Linux | [github.com/abeluck/stegdetect](https://github.com/abeluck/stegdetect) |
 | **StegoVeritas** | Linux | `pip install stegoveritas` |
 | **StegExpose** | Linux/Windows | [github.com/b3dk7/StegExpose](https://github.com/b3dk7/StegExpose) |
-| **HxD** | Windows | [mh-nexus.de/en/hxd](https://mh-nexus.de/en/hxd/) |
+
 
 ---
 
@@ -373,6 +370,11 @@ cat extracted_secret.txt
 | **Stego File** | A carrier file that contains hidden embedded data |
 | **Passphrase** | Password used to encrypt/lock the hidden data |
 | **Metadata Stego** | Hiding data inside file metadata fields (EXIF, Comment, etc.) |
+
+---
+
+## **Connect with me**
+[**Naeem Akmal on LinkedIn**](https://www.linkedin.com/in/naeemakmal15)
 
 ---
 
