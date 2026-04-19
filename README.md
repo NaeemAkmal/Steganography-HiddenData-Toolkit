@@ -87,9 +87,11 @@ steghide --extract -sf gift.jpeg
 **Output:** `gift.jpeg` revealed an embedded `Secret.txt` (31 bytes), encrypted with Rijndael-128 CBC.
 
 ![Steghide Info](screenshots/task1_steghide_info.png)
+
 *Steghide inspecting gift.jpeg — confirms embedded Secret.txt, encryption scheme, and compression*
 
 ![Steghide Extract](screenshots/task1_steghide_extract.png)
+
 *Steghide successfully extracting the hidden file with the correct passphrase*
 
 ### Stegosuite — Embed & Extract
@@ -106,9 +108,11 @@ stegosuite extract flower_embed.jpg -k 123456
 ```
 
 ![Stegosuite Embed](screenshots/task1_stegosuite_embed.png)
+
 *Stegosuite embedding secret.txt into flower.jpg — output saved as flower_embed.jpg*
 
 ![Stegosuite Extract](screenshots/task1_stegosuite_extract.png)
+
 *Stegosuite extracting the hidden file from flower_embed.jpg — Secret Message recovered*
 
 ### StegSeek — Fast Passphrase Brute-Force
